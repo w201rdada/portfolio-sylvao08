@@ -1,25 +1,53 @@
-# My second cool idea {#slug-two}
+# A Sky Without Delay - The Dynamic Flight Schedule System
 
 #### Keywords
 
-yaba, daba, do
+flight, delay, schedule, prediction
 
-## A beginning.
+## A beginning - The problem
 
-Nulla  sint  art party ex, mlkshk disrupt selvage 90's.  Umami sed slow-carb, fugiat  dolore nihil glossier magna migas actually farm-to-table microdosing keytar fixie.  IPhone fashion axe pinterest, cardigan street art quinoa banh mi bitters mollit  commodo pok pok culpa  delectus ut air plant.  Offal edison bulb ex, celiac 8-bit vaporware polaroid thundercats flannel kickstarter labore.  Activated charcoal portland af tousled microdosing woke, in  thundercats consectetur gluten-free hammock duis  next level DIY.  Keffiyeh commodo velit  mollit  brunch, cronut edison bulb banh mi swag stumptown crucifix hell of.  Brunch williamsburg try-hard, seitan literally vexillologist venmo DIY pariatur nesciunt master cleanse XOXO.
+"My flight is delayed, I don't know how long I need to wait and I guess the ticket for the connection flight is wasted."
+"The aircraft has been holding in the air for half an hour and has to divert before the fuel tank run empty."
+"The crew is reaching their duty time limit, the flight has to delay for another few hours before we can arrange a new crew to take over."
+Having been working in airlines for years, I have been frequently hearing such statements and dealing with the problems caused by flight delays: customer compensation, flight rearrangement, crew transfer, unplanned maintenance, extra fuel, this list can go on and on. Not only to the airlines, the passengers also suffer a great pain from flight delay. The time loss due to delay, cost of missing connection flights and other indirect cost are borne by the passengers.
 
-## A middle.
+According to a research called total delay impact study by Federal Aviation Administration (FAA), the direct cost of air transportation delay in 2007 is as high as 32.9 billion dollars, half of which are to the passengers.
+Direct cost of air transportation delay in 2007
+Cost Component	Cost(in billions)
+Costs to Airlines	$8.3
+Costs to Passengers	$16.7
+Costs from Lost Demand	$3.9
+Total Direct Cost	$28.9
+Impact on GDP	$4.0
+Total Cost	$32.9
 
-8-bit synth irony nisi wolf, street art dreamcatcher flannel placeat selvage health goth sriracha.  Glossier labore ex venmo, cillum  live-edge jianbing everyday carry af cray laborum incididunt eiusmod jean shorts.  Normcore slow-carb lyft letterpress, beard tilde art party.  Poke marfa incididunt tempor duis.  Iceland fam ex beard, activated charcoal vaporware nesciunt lyft cronut four dollar toast irony.  Officia  stumptown voluptate  unicorn culpa  bushwick.  Mollit  vero af marfa deserunt  flexitarian.
+It is easy to imagine that improving the airlines' on time performance and reduce flight delay can have huge and compound benefit to multiple parties of the air transportation, the airlines will be able to reduced unnecessary crew or aircraft transfer, ad-hoc flight rearrangements. The passengers don't have to fly to New York one day ahead for afternoon just because the flight may delay in the morning and so on.
+
+Because we dive in to how we can resolve the problem, let's first look at the cause of flight delay and acknowledge its complexity. As one of the biggest industries in the world and covers global operations, no problem in Aviation is simple. Specific for flight delay, here are a few causes and challenges that the industry faces:
+
+Operation uncertainty
+Aviation operation consist of a complex series of collaborative tasks by various parties and it effectiveness is driven by multiple internal and external factors. Any deviation from the plan of any of these tasks or unexpected external factors can potentially cause a flight delay, for example, mechanical failure, late passenger onboarding, airport congestion and so on. Because these operation uncertainty cannot be foreseen, once it happens, it leaves almost no room for airlines to maneuver around and the flight delay will inevitably occur.
+
+Information blockage
+Another reason that incur the high cost of flight delay is that various parties don't have enough information when they are making decisions for their step. Flight dispatchers don't know that the airspace is already congested when he/she dispatches a flight into that area; the passengers don't know their flights are about to be delayed when they set out for the airport. The air traffic controllers usually don't have good visibility of the operation outside their managed space. Such information isolation will lead to different party making different or even conflictive decisions.
+
+Unknown Indicators of flight delay
+Even though there are potential indicators of an upcoming flight delay, there is no sufficient study on such indicator for the operational staff the understand and utilize to make their operation decision. For example, it requires analysis to say how much is the impact of a closed air-route to upcoming flights. Some events may have correlation to flight delay but we don't see that way because the correlation is not easily seen.
+
+Challenges of consequential effect
+Flight delay is an result of accumulative events and can have butterfly effect. One flight delay are usually followed by several delays after it. When flight delay actually happens, it is still valuable to know the impact to the following flights so that related parties could react accordingly to reduce the butterfly effects. But this is challenging without sufficient study.
 
 
-```{r experimental,echo=F,results='asis',eval=F}
-data.table::fread('https://raw.githubusercontent.com/UCB-MIDS/experiments-causality/master/data/GerberGreenBook_Chapter3_Donations.csv?token=ABNmuX-Q14rzQ4teItDenc9L5Wo2flncks5ZL5qEwA%3D%3D') %>% stargazer::stargazer(type = 'html',title = 'Something from W241 Experiments and Causality')
-```
+## A middle - The Solution
 
+Although these challenges has hampered the traditional method to resolve the flight delay problem, the new data science methodology combined with the wide coverage of internet may provide a new path for the solution. The flight delay can be properly avoided and managed by a dynamic flight schedule prediction system. There should be two major components of this system. One is the dynamic flight schedule prediction function and the other is the dynamic flight schedule broadcast services.
 
-Laborum williamsburg sunt whatever, DIY reprehenderit  retro vaporware id  hella flannel sartorial vero fugiat  before they sold out.  Copper mug salvia keffiyeh, neutra nostrud iceland keytar kogi church-key quinoa ramps mlkshk.  Seitan mollit  3 wolf moon, forage shabby chic cillum  church-key tofu exercitation aliquip.  Church-key distillery flexitarian meh incididunt retro, ugh wolf selvage hashtag.  Bicycle rights 90's officia  vape.  Listicle post-ironic vape ex.  Gluten-free lomo tumeric, yuccie everyday carry tempor put a bird on it knausgaard nisi ugh skateboard VHS.
+The main purpose of the dynamic flight schedule prediction function is to utilize various flight operation data stream to dynamically predict the schedule of each flights. As more and more data being available nowadays, we are more than ever before capable of capturing the potential drivers of flight delay. Such data may include operation status data such as NOTAM(Notice to Airman) and AIP(Aeronautic Information publication), traffic data like ADS-B(Autonomous Dependent Surveillance-Broadcast), weather data such as weather report and forecast, historical flight data like QAR(Quick Access Recorder) and so on. With all these data, we are able to study how each factor play their part in affect the flight schedule and predict the flight schedule based on these study. For example, we will be able to know how traffic can affect the flight schedule or how runway closure combined with airspace congestion may affect following flights leaving and entering according airspace and airport. The insight gained via the study can be used to predict the flight schedule in the real time.
 
-## An end.
+The other part of the system is the dynamic schedule broadcasting function. Imagine every time when you check the departure time of your flight, what you see is not just one fixed time point but a predefined schedule and a dynamic estimated schedule. This estimated schedule is the prediction result from the flight schedule prediction function module above and serve to notify the passengers, airlines and airports about the operation status in the real time. Because the system is taking much more data than any human is capable of and is doing much more sophisticated computation than human, it is able to provide a much more precise prediction on the flight schedule than we currently can. Providing a dynamically predicted flight schedule will help the airline adjust their operation plan in time and the passengers could adjust their travel plan ahead of time. Such broadcasting can be implemented through various applications based on internet and make the information available to most people.
 
-Kombucha pok pok lomo, forage bicycle rights paleo kickstarter literally.  Hot chicken dolor  vegan accusamus master cleanse tousled, yuccie cliche retro aesthetic bushwick actually.  Ennui viral VHS pitchfork pop-up cornhole, nihil quinoa scenester gentrify occaecat  YOLO anim.  Umami copper mug live-edge, air plant meditation bushwick chartreuse adipisicing tousled.  Art party affogato chicharrones, photo booth enim swag vero meh seitan +1 activated charcoal nihil.  Etsy gluten-free authentic mixtape.  Shabby chic duis  90's pop-up pinterest, lumbersexual mollit  cillum.
+To give an example, let's say flight QC101 has a predefined scheduled departure time as 10:00 October 1st, 2017 and a predefined arrival time as 13:00 on the same day, it also has a dynamic predicted departure time as 12:00 October 1st, 2017 and predicted arrival time at 16:00 on the same day. The airline can choose to postpone the time of crew preparation based on the prediction and to announce the new time to the public. The passenger on the other side can delay going to the airport according to the prediction and the airline's announcement, passengers who have connection flights can change their flight earlier than usual.
+
+## An end - The Difference
+
+This data driven solution may potentially revolutionize the flight operation schedule and planning process, changing the methodology from planning via coordination to planning based on prediction. Using the predictive algorithm, the operation uncertainty can be effectively predicted giving opportunities to proactive solution rather than the reactive approach used in the current operation. Not only can the prediction system predict the delay of one flight, but also it can predict chain effect(following delays)caused by such one delay, giving airline and passenger more time for adjustment. The dynamic schedule broadcasting also resolve the problem of information blockage, because all the people are looking at the same prediction, they are able to make more coordinated adjustment in their action rather than making different plan based on their own data which could lead to conflicts. A comprehensive prediction system based on data will enable a more efficient flight operation.
