@@ -15,8 +15,8 @@ According to a research called total delay impact study by Federal Aviation Admi
 
 Direct cost of air transportation delay in 2007
 Cost Component          Cost(in billions)
-Costs to Airlines       $8.3
-Costs to Passengers     $16.7
+Costs to Airlines       $8.3\n
+Costs to Passengers     $16.7\n
 Costs from Lost Demand  $3.9
 Total Direct Cost	      $28.9
 Impact on GDP	          $4.0
