@@ -1,4 +1,4 @@
-# Predictive Fuel Planning for Flights
+# Predictive Fuel Planning for Flights {#predictive-fuel-planning}
 
 #### Keywords
 
