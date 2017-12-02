@@ -1,6 +1,6 @@
 # Predictive Fuel Planning for Flights {#predictive-fuel-planning}
 
-#### Keywords
+#### Keywords {-}
 
 fuel, airline, prediction
 

@@ -1,6 +1,6 @@
 # A Sky Without Delay - The Dynamic Flight Schedule System {#sky-without-delay}
 
-#### Keywords
+#### Keywords {-}
 
 flight, delay, schedule, prediction
 
