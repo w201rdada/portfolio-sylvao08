@@ -17,7 +17,7 @@ http://www.isr.umd.edu/NEXTOR/pubs/TDI_Report_Final_10_18_10_V3.pdf
 
 It is easy to imagine that improving the airlines' on time performance and reduce flight delay can have huge and compound benefit to multiple parties of the air transportation, the airlines will be able to reduced unnecessary crew or aircraft transfer, ad-hoc flight rearrangements. The passengers don't have to fly to New York one day ahead for afternoon just because the flight may delay in the morning and so on.
 
-Because we dive in to how we can resolve the problem, let's first look at the cause of flight delay and acknowledge its complexity. As one of the biggest industries in the world and covers global operations, no problem in Aviation is simple. Specific for flight delay, here are a few causes and challenges that the industry faces:
+Before we dive in to how we can resolve the problem, let's first look at the cause of flight delay and acknowledge its complexity. As one of the biggest industries in the world and covers global operations, no problem in Aviation is simple. Specific for flight delay, here are a few causes and challenges that the industry faces:
 
 Operation uncertainty
 Aviation operation consist of a complex series of collaborative tasks by various parties and it effectiveness is driven by multiple internal and external factors. Any deviation from the plan of any of these tasks or unexpected external factors can potentially cause a flight delay, for example, mechanical failure, late passenger onboarding, airport congestion and so on. Because these operation uncertainty cannot be foreseen, once it happens, it leaves almost no room for airlines to maneuver around and the flight delay will inevitably occur.
