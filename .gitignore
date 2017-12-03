@@ -24,4 +24,5 @@
 !docs/*/*/*/*/*
 !docs/*/*/*/*/*/*
 !img/
+!img/*
 .Rproj.user
