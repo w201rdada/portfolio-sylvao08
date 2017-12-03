@@ -9,11 +9,17 @@ flight, delay, schedule, prediction
 "My flight is delayed, I don't know how long I need to wait and I guess the ticket for the connection flight is wasted."
 "The aircraft has been holding in the air for half an hour and has to divert before the fuel tank run empty."
 "The crew is reaching their duty time limit, the flight has to delay for another few hours before we can arrange a new crew to take over."
+```{r echo=FALSE,fig.cap='Busy Sky',fig.align='center',out.width='50%'}
+knitr::include_graphics('img/Busy_Sky.png')
+```
 Having been working in airlines for years, I have been frequently hearing such statements and dealing with the problems caused by flight delays: customer compensation, flight rearrangement, crew transfer, unplanned maintenance, extra fuel, this list can go on and on. Not only to the airlines, the passengers also suffer a great pain from flight delay. The time loss due to delay, cost of missing connection flights and other indirect cost are borne by the passengers.
 
 According to a research called total delay impact study by Federal Aviation Administration (FAA), the direct cost of air transportation delay in 2007 is as high as 32.9 billion dollars, half of which are to the passengers.
+```{r echo=FALSE,fig.cap='Busy Sky',fig.align='center',out.width='50%'}
+knitr::include_graphics('img/Delay_Cost.png')
+```
 
-http://www.isr.umd.edu/NEXTOR/pubs/TDI_Report_Final_10_18_10_V3.pdf
+[Total Delay Impact Study](http://www.isr.umd.edu/NEXTOR/pubs/TDI_Report_Final_10_18_10_V3.pdf)
 
 It is easy to imagine that improving the airlines' on time performance and reduce flight delay can have huge and compound benefit to multiple parties of the air transportation, the airlines will be able to reduced unnecessary crew or aircraft transfer, ad-hoc flight rearrangements. The passengers don't have to fly to New York one day ahead for afternoon just because the flight may delay in the morning and so on.
 

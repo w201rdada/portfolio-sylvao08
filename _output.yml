@@ -11,10 +11,9 @@ bookdown::gitbook:
       before: |
         <li><a href="./">Know Before You Go</a></li>
       after: |
-        <li><a href="https://github.com/oskibear" target="blank">GitHub</a></li>
-        <li><a href="https://www.ischool.berkeley.edu/people/oski-bear" target="blank">UC Berkeley</a></li>
-        <li><a href="https://www.linkedin.com/in/oskibear/" target="blank">LinkedIn</a></li>
-        <li><a href="https://www.wired.com/2013/02/friendster-autopsy/" target="blank">Friendster</a></li>        
+        <li><a href="https://github.com/sylvao08" target="blank">GitHub</a></li>
+        <li><a href="https://www.ischool.berkeley.edu/people/chris-lv" target="blank">UC Berkeley</a></li>
+        <li><a href="https://www.linkedin.com/in/shangyun-lv-7669831b/" target="blank">LinkedIn</a></li>
     sharing:
       facebook: no
       twitter: no
