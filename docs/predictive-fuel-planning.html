@@ -61,16 +61,16 @@
       <nav role="navigation">
 
 <ul class="summary">
-<li><a href="./">Oski Bear</a></li>
+<li><a href="./">Know Before You Go</a></li>
 
 <li class="divider"></li>
-<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Welcome!</a><ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Welcome Onboard!</a><ul>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#about-the-author"><i class="fa fa-check"></i>About the author</a></li>
 </ul></li>
 <li class="chapter" data-level="1" data-path="predictive-fuel-planning.html"><a href="predictive-fuel-planning.html"><i class="fa fa-check"></i><b>1</b> Predictive Fuel Planning for Flights</a><ul>
-<li class="chapter" data-level="1.1" data-path="predictive-fuel-planning.html"><a href="predictive-fuel-planning.html#a-beginning."><i class="fa fa-check"></i><b>1.1</b> A beginning.</a></li>
-<li class="chapter" data-level="1.2" data-path="predictive-fuel-planning.html"><a href="predictive-fuel-planning.html#a-middle."><i class="fa fa-check"></i><b>1.2</b> A middle.</a></li>
-<li class="chapter" data-level="1.3" data-path="predictive-fuel-planning.html"><a href="predictive-fuel-planning.html#an-end."><i class="fa fa-check"></i><b>1.3</b> An end.</a></li>
+<li class="chapter" data-level="1.1" data-path="predictive-fuel-planning.html"><a href="predictive-fuel-planning.html#a-heavy-cost-on-fuel."><i class="fa fa-check"></i><b>1.1</b> A Heavy Cost on Fuel.</a></li>
+<li class="chapter" data-level="1.2" data-path="predictive-fuel-planning.html"><a href="predictive-fuel-planning.html#a-data-science-solution"><i class="fa fa-check"></i><b>1.2</b> A Data Science Solution</a></li>
+<li class="chapter" data-level="1.3" data-path="predictive-fuel-planning.html"><a href="predictive-fuel-planning.html#value-and-changes"><i class="fa fa-check"></i><b>1.3</b> Value and Changes</a></li>
 </ul></li>
 <li class="chapter" data-level="2" data-path="sky-without-delay.html"><a href="sky-without-delay.html"><i class="fa fa-check"></i><b>2</b> A Sky Without Delay - The Dynamic Flight Schedule System</a><ul>
 <li class="chapter" data-level="2.1" data-path="sky-without-delay.html"><a href="sky-without-delay.html#a-beginning---the-problem"><i class="fa fa-check"></i><b>2.1</b> A beginning - The problem</a></li>
@@ -78,10 +78,9 @@
 <li class="chapter" data-level="2.3" data-path="sky-without-delay.html"><a href="sky-without-delay.html#an-end---the-difference"><i class="fa fa-check"></i><b>2.3</b> An end - The Difference</a></li>
 </ul></li>
 <li class="divider"></li>
-<li><a href="https://github.com/oskibear" target="blank">GitHub</a></li>
-<li><a href="https://www.ischool.berkeley.edu/people/oski-bear" target="blank">UC Berkeley</a></li>
-<li><a href="https://www.linkedin.com/in/oskibear/" target="blank">LinkedIn</a></li>
-<li><a href="https://www.wired.com/2013/02/friendster-autopsy/" target="blank">Friendster</a></li>        
+<li><a href="https://github.com/sylvao08" target="blank">GitHub</a></li>
+<li><a href="https://www.ischool.berkeley.edu/people/chris-lv" target="blank">UC Berkeley</a></li>
+<li><a href="https://www.linkedin.com/in/shangyun-lv-7669831b/" target="blank">LinkedIn</a></li>
 
 </ul>
 
@@ -106,20 +105,28 @@
 <h4>Keywords</h4>
 <p>fuel, airline, prediction</p>
 </div>
-<div id="a-beginning." class="section level2">
-<h2><span class="header-section-number">1.1</span> A beginning.</h2>
+<div id="a-heavy-cost-on-fuel." class="section level2">
+<h2><span class="header-section-number">1.1</span> A Heavy Cost on Fuel.</h2>
 <p>“Every airline is now a lower-cost airline. The worst financial crisis in the industry’s history over the last five years has forced all carriers to achieve cost efficiencies and higher productivity if they are to survive.” – Giovanni Bisignani – Director General &amp; CEO, IATA</p>
-<p>Per IATA’s latest fuel fact sheet, the global airline industry’s fuel bill is estimated to total $133 billion in 2016 (accounting for around 19% of operating expense at $44.6/barrel Brent of oil). If we take Southwest Airlines - a typical major airline in U.S – as an example, the fuel cost in the first quarter of 2017 is $921,979,000 which makes up 22% of the operating expense or 19% of the total operating revenue of the airline. This mean that even 1% of fuel saving could potentially bring significant improvement on the airline’s financial status.</p>
-<p><a href="https://www.iata.org/pressroom/facts_figures/fact_sheets/Documents/fact-sheet-fuel.pdf">IATA Fuel Fact Sheet</a> <a href="http://investors.southwest.com/news-and-events/news-releases/2017/04-27-2017-113101765g">Southwest Report on First Quarter Profit</a> <a href="http://aviationdb.net/aviationdb/FuelExpenseByCarrierQuery#SUBMIT">Fuel as a Percentage of Operating Expense from AviationDB</a></p>
+Per IATA’s latest fuel fact sheet, the global airline industry’s fuel bill is estimated to total $133 billion in 2016 (accounting for around 19% of operating expense at $44.6/barrel Brent of oil).
+<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-1"></span>
+<img src="img/Fuel_Impact.png" alt="Fuel Impact to Airlines" width="70%" />
+<p class="caption">
+Figure 1.1: Fuel Impact to Airlines
+</p>
 </div>
-<div id="a-middle." class="section level2">
-<h2><span class="header-section-number">1.2</span> A middle.</h2>
+<p>If we take Southwest Airlines - a typical major airline in U.S – as an example, the fuel cost in the first quarter of 2017 is $921,979,000 which makes up 22% of the operating expense or 19% of the total operating revenue of the airline. This mean that even 1% of fuel saving could potentially bring significant improvement on the airline’s financial status.</p>
+<p><a href="http://investors.southwest.com/news-and-events/news-releases/2017/04-27-2017-113101765">Southwest Report on First Quarter Profit</a></p>
+<p><a href="http://aviationdb.net/aviationdb/FuelExpenseByCarrierQuery#SUBMIT">Fuel as a Percentage of Operating Expense from AviationDB</a></p>
+</div>
+<div id="a-data-science-solution" class="section level2">
+<h2><span class="header-section-number">1.2</span> A Data Science Solution</h2>
 <p>While fuel price is undoubtedly a primary driver of the fuel cost, the airlines don’t have much control over it. The part that the airline can improve is the process of planning and using fuel in a daily basis. One particular step of the process that has significant room for improvement is the flight planning during which the flight dispatcher use the flight planning system to decide how much fuel that a flight is going to burn and how much to add to the aircraft. Currently, the fuel planning calculation is based on theories from physics such as the head/tail wind model and prescribed cruise altitude. The actual historical fuel burn data which reflects other operational factors about fuel burn has not been taken into consideration during the fuel planning for future flights, these factors could be the risk of holding, delay, detour and traffic. Without such consideration, the current fuel plan will be subject to inaccuracy. The only measure the airline can take is to add extra fuel to every flight to compensate any possible additional fuel burn and such measure will significantly increase the overall fuel cost.</p>
 <p>What we can do from the data science angle is to locate the primary driver of the fuel burn using historical flight data to see what kind of features and how much they affects the fuel burn of a flight. For example, we may find out that the cruise condition – specifically the altitude and the wind – is one of the primary drivers of fuel burn. Then we may want to predict the cruise altitude and wind, but because the such information is not directly available before the flight when the flight dispatcher is making the fuel plan, we might need to also find the correlation between some pre-flight information that could potentially be translated to the condition during the flight. Another way to improve the accuracy of the fuel prediction is to use the similar historical flights to the upcoming flights as training dataset from prediction.</p>
 <p>When the model is good enough, we could develop an application for flight dispatchers to review the predicted fuel burn when they are making the flight plan. This predicted value will influence the flight dispatchers’ fuel decision based on data and potentially help them add more accurate amount of fuel for the flights.</p>
 </div>
-<div id="an-end." class="section level2">
-<h2><span class="header-section-number">1.3</span> An end.</h2>
+<div id="value-and-changes" class="section level2">
+<h2><span class="header-section-number">1.3</span> Value and Changes</h2>
 <p>The benefit of such analytics is multiple folders. First of all, the fuel prediction is not presented to the analysts in airline but directly to the flight dispatchers who make the fuel decision every day, which means the analyisis could directly drive better decision making; second, the value is presented to them at the moment of decision making which has the greatest influence on the dispatchers on making fuel decisions; furthermore, such prediction is not generic but specifically target a flight which will make the analytic practical.</p>
 <p>There are several challenges for such analytics. First, in order to reach a satisfactory level of accuracy, multiple data sources may need to be included, while some of them may be publicly available like weather, others may require private data from the airlines. Also, there may be obstacle from the regulation perspective since for many years the regulation has been requiring certain amount of extra fuel as part of the fuel planning process, the fuel prediction analysis may potentially lead the airline to deviate from that regulation even though such deviation is supported by data and analytics. However, regulation can be changed as long as the prediction is justified, and I believe using predictive analysis to do flight planning is only the matter of time.</p>
 
@@ -160,7 +167,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/w201rdada/portfolio-MYGITHUBUSER/edit/master/01.Rmd",
+"link": "https://github.com/w201rdada/portfolio-sylvao08/edit/master/01.Rmd",
 "text": "Edit"
 },
 "download": null,
