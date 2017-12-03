@@ -61,16 +61,16 @@
       <nav role="navigation">
 
 <ul class="summary">
-<li><a href="./">Oski Bear</a></li>
+<li><a href="./">Know Before You Go</a></li>
 
 <li class="divider"></li>
-<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Welcome!</a><ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Welcome Onboard!</a><ul>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#about-the-author"><i class="fa fa-check"></i>About the author</a></li>
 </ul></li>
 <li class="chapter" data-level="1" data-path="predictive-fuel-planning.html"><a href="predictive-fuel-planning.html"><i class="fa fa-check"></i><b>1</b> Predictive Fuel Planning for Flights</a><ul>
-<li class="chapter" data-level="1.1" data-path="predictive-fuel-planning.html"><a href="predictive-fuel-planning.html#a-beginning."><i class="fa fa-check"></i><b>1.1</b> A beginning.</a></li>
-<li class="chapter" data-level="1.2" data-path="predictive-fuel-planning.html"><a href="predictive-fuel-planning.html#a-middle."><i class="fa fa-check"></i><b>1.2</b> A middle.</a></li>
-<li class="chapter" data-level="1.3" data-path="predictive-fuel-planning.html"><a href="predictive-fuel-planning.html#an-end."><i class="fa fa-check"></i><b>1.3</b> An end.</a></li>
+<li class="chapter" data-level="1.1" data-path="predictive-fuel-planning.html"><a href="predictive-fuel-planning.html#a-heavy-cost-on-fuel."><i class="fa fa-check"></i><b>1.1</b> A Heavy Cost on Fuel.</a></li>
+<li class="chapter" data-level="1.2" data-path="predictive-fuel-planning.html"><a href="predictive-fuel-planning.html#a-data-science-solution"><i class="fa fa-check"></i><b>1.2</b> A Data Science Solution</a></li>
+<li class="chapter" data-level="1.3" data-path="predictive-fuel-planning.html"><a href="predictive-fuel-planning.html#value-and-changes"><i class="fa fa-check"></i><b>1.3</b> Value and Changes</a></li>
 </ul></li>
 <li class="chapter" data-level="2" data-path="sky-without-delay.html"><a href="sky-without-delay.html"><i class="fa fa-check"></i><b>2</b> A Sky Without Delay - The Dynamic Flight Schedule System</a><ul>
 <li class="chapter" data-level="2.1" data-path="sky-without-delay.html"><a href="sky-without-delay.html#a-beginning---the-problem"><i class="fa fa-check"></i><b>2.1</b> A beginning - The problem</a></li>
@@ -78,10 +78,9 @@
 <li class="chapter" data-level="2.3" data-path="sky-without-delay.html"><a href="sky-without-delay.html#an-end---the-difference"><i class="fa fa-check"></i><b>2.3</b> An end - The Difference</a></li>
 </ul></li>
 <li class="divider"></li>
-<li><a href="https://github.com/oskibear" target="blank">GitHub</a></li>
-<li><a href="https://www.ischool.berkeley.edu/people/oski-bear" target="blank">UC Berkeley</a></li>
-<li><a href="https://www.linkedin.com/in/oskibear/" target="blank">LinkedIn</a></li>
-<li><a href="https://www.wired.com/2013/02/friendster-autopsy/" target="blank">Friendster</a></li>        
+<li><a href="https://github.com/sylvao08" target="blank">GitHub</a></li>
+<li><a href="https://www.ischool.berkeley.edu/people/chris-lv" target="blank">UC Berkeley</a></li>
+<li><a href="https://www.linkedin.com/in/shangyun-lv-7669831b/" target="blank">LinkedIn</a></li>
 
 </ul>
 
@@ -108,9 +107,22 @@
 </div>
 <div id="a-beginning---the-problem" class="section level2">
 <h2><span class="header-section-number">2.1</span> A beginning - The problem</h2>
-<p>“My flight is delayed, I don’t know how long I need to wait and I guess the ticket for the connection flight is wasted.” “The aircraft has been holding in the air for half an hour and has to divert before the fuel tank run empty.” “The crew is reaching their duty time limit, the flight has to delay for another few hours before we can arrange a new crew to take over.” Having been working in airlines for years, I have been frequently hearing such statements and dealing with the problems caused by flight delays: customer compensation, flight rearrangement, crew transfer, unplanned maintenance, extra fuel, this list can go on and on. Not only to the airlines, the passengers also suffer a great pain from flight delay. The time loss due to delay, cost of missing connection flights and other indirect cost are borne by the passengers.</p>
-<p>According to a research called total delay impact study by Federal Aviation Administration (FAA), the direct cost of air transportation delay in 2007 is as high as 32.9 billion dollars, half of which are to the passengers.</p>
-<p><a href="http://www.isr.umd.edu/NEXTOR/pubs/TDI_Report_Final_10_18_10_V3.pdf" class="uri">http://www.isr.umd.edu/NEXTOR/pubs/TDI_Report_Final_10_18_10_V3.pdf</a></p>
+“My flight is delayed, I don’t know how long I need to wait and I guess the ticket for the connection flight is wasted.” “The aircraft has been holding in the air for half an hour and has to divert before the fuel tank run empty.” “The crew is reaching their duty time limit, the flight has to delay for another few hours before we can arrange a new crew to take over.”
+<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-2"></span>
+<img src="img/Busy_Sky.png" alt="Busy Sky" width="50%" />
+<p class="caption">
+Figure 2.1: Busy Sky
+</p>
+</div>
+<p>Having been working in airlines for years, I have been frequently hearing such statements and dealing with the problems caused by flight delays: customer compensation, flight rearrangement, crew transfer, unplanned maintenance, extra fuel, this list can go on and on. Not only to the airlines, the passengers also suffer a great pain from flight delay. The time loss due to delay, cost of missing connection flights and other indirect cost are borne by the passengers.</p>
+According to a research called total delay impact study by Federal Aviation Administration (FAA), the direct cost of air transportation delay in 2007 is as high as 32.9 billion dollars, half of which are to the passengers.
+<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-3"></span>
+<img src="img/Delay_Cost.png" alt="Busy Sky" width="50%" />
+<p class="caption">
+Figure 2.2: Busy Sky
+</p>
+</div>
+<p><a href="http://www.isr.umd.edu/NEXTOR/pubs/TDI_Report_Final_10_18_10_V3.pdf">Total Delay Impact Study</a></p>
 <p>It is easy to imagine that improving the airlines’ on time performance and reduce flight delay can have huge and compound benefit to multiple parties of the air transportation, the airlines will be able to reduced unnecessary crew or aircraft transfer, ad-hoc flight rearrangements. The passengers don’t have to fly to New York one day ahead for afternoon just because the flight may delay in the morning and so on.</p>
 <p>Before we dive in to how we can resolve the problem, let’s first look at the cause of flight delay and acknowledge its complexity. As one of the biggest industries in the world and covers global operations, no problem in Aviation is simple. Specific for flight delay, here are a few causes and challenges that the industry faces:</p>
 <p>Operation uncertainty Aviation operation consist of a complex series of collaborative tasks by various parties and it effectiveness is driven by multiple internal and external factors. Any deviation from the plan of any of these tasks or unexpected external factors can potentially cause a flight delay, for example, mechanical failure, late passenger onboarding, airport congestion and so on. Because these operation uncertainty cannot be foreseen, once it happens, it leaves almost no room for airlines to maneuver around and the flight delay will inevitably occur.</p>
@@ -166,7 +178,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/w201rdada/portfolio-MYGITHUBUSER/edit/master/02.Rmd",
+"link": "https://github.com/w201rdada/portfolio-sylvao08/edit/master/02.Rmd",
 "text": "Edit"
 },
 "download": null,
