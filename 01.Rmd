@@ -10,9 +10,11 @@ fuel, airline, prediction
   – Giovanni Bisignani – Director General & CEO, IATA
   
 Per IATA’s latest fuel fact sheet, the global airline industry’s fuel bill is estimated to total $133 billion in 2016 (accounting for around 19% of operating expense at $44.6/barrel Brent of oil).
+```{r fuel impact,echo=FALSE,fig.cap='Fuel Impact to Airlines',fig.align='center',out.width='50%'}
+knitr::include_graphics('img/Fuel_Impact.png')
+```
 If we take Southwest Airlines - a typical major airline in U.S – as an example, the fuel cost in the first quarter of 2017 is $921,979,000 which makes up 22% of the operating expense or 19% of the total operating revenue of the airline. This mean that even 1% of fuel saving could potentially bring significant improvement on the airline’s financial status.
 
-[IATA Fuel Fact Sheet](https://www.iata.org/pressroom/facts_figures/fact_sheets/Documents/fact-sheet-fuel.pdf)
 [Southwest Report on First Quarter Profit](http://investors.southwest.com/news-and-events/news-releases/2017/04-27-2017-113101765g)
 [Fuel as a Percentage of Operating Expense from AviationDB](http://aviationdb.net/aviationdb/FuelExpenseByCarrierQuery#SUBMIT)
 
