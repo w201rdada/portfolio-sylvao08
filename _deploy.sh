@@ -7,8 +7,11 @@ git config user.name "Shangyun Lv"
 # make sure you're on the master branch
 git checkout master
 
-cd /home/rstudio/ \
-&& rm -rf docs/ \
+# cd /home/rstudio/ \
+# && rm -rf docs/ \
+# && mv -u -T _book/ docs/
+
+rm -rf docs/ \
 && mv -u -T _book/ docs/
 
 # assuming you've already built it, replace old docs with new _books build
